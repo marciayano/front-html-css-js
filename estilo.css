@@ -1,0 +1,67 @@
+/* seletores, onde a propriedade sera aplicada {propriedade: valor, indica o comportamento que a propriedade vai ter }*/
+body {font-family: sans-serif;}
+
+/* Seletor Universal se aplica a todos os elementos do html*/
+* {color: blue}
+
+/*Seletor de Elemento tem o mesmo nome da tag: <p>Primeiro Paragrafo</>*/
+p {color: gray}
+
+/* Seletor de Classe eh associado a um atributo class. Podemos atribuir tantas classes any elementos Html, soh separar com espaco <h3 class="titulo noticias"> Noticias</h3> */
+.titulo {font-size: 22px;}
+
+/*Seletor de ID, tenha um nome unico para cada ID. <h3 id="saudacao">Ola!</h3> */
+#saudacao {color: blue;}
+
+/*Seletor de Grupo, aplica a mesma regra para varios elementos, classes, IDs. <h2>Subtitulo em amarelo</h2>   <p>Paragrafo em amarelo tambem</p> */
+h2, p {color:yellow}
+
+/*Seletores Descendentes Para selecionar qualquer descendente a partir do CSS, escrevemos o seletor ancestral seguido do seletor descendente, separados por um espaço.
+A seguir, estamos selecionando apenas os elementos a que sejam descendentes do elemento nav - inclusive os indiretos, se houver! <nav> <strong> <a href="www" FirstLink</a><strong> <a href...></a> </nav> + <p><a> */
+nav a {color: blue} 
+/* so o primeiro e segundo link serao azul*/
+
+/*Seletor de Descendete Direto
+nav > a {color: blue} so o segundo link sera azul
+
+Seletor Adjacente
+<div> <p> 1.Paragrafo </p> </div>
+<p> 2.Paragrafo </p>
+<p> 3.Paragrafo </p>
+
+div ~ p {color: blue} 2 e 3 paragrafo azul
+
+Seletor Adjacente Direto
+div + p {color: blue} apenas o 2 azul
+
+Seletor combinado
+<h2> Subtitulo </h2>
+<h2 class="subtitulo"> Subtitulo em red</h2>
+
+h2.subtitulo {color: red}
+
+--------------------
+
+CSS SEMPRE VAI PRIORIZAR SELETORES MAIS ESPECIFICOS
+
+------ CORES -------
+
+Cor de TEXTO: h2 {color: purple/#l554 /rgf(12.30.11)} site htmlColorCodes
+Cor de FUNDO: p{background-color: ...}
+background-color: #KL123;
+background-image: url('image.png');
+background-position:center;
+background: linear-gradient(#6CACD3,white);
+
+
+
+----- CSS INLINE --------EVITAR..
+USAR EM CASO DE BACKGROUND-IMAGE JA Q A IMG NAO SERA REUTILIZADA 
+<div class="image" <divstyle="background-image: url(`image.png`)"></div>
+
+estiliza diretamente na tag do HTML, sem precisar criar link externo CSS
+<div style="background-color: red; background-color: red;"></div>
+
+
+
+

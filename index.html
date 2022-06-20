@@ -1,0 +1,187 @@
+<!--Internet conecta computadores "BR/JP", eh uma infra necessária para a Web funcionar "a Web linka os docs", nós conseguimos acessar esse conteúdo através dos Navegadores "usam a Lgg HTML para interpretar o codigo HTML, esse padrão é definido pela W3C, O Html usa o elemento: tag, a tag marca o conteúdo, agrega informações e diz como será exibido no navegador" -->
+
+<!--Indentação: forma correta de escrever uma tag: <tag de abertura/ atributo /=/ "valores entre aspas e fim da tag de abertura">/ conteúdo que queremos escrever / tag de fechamento-->
+
+<!-- <html>: tudo precisa ser dentro dessa tag Head: conteúdo essencial nao visivel. Body: conteúdo visivel-->
+
+<!--versao do HTML-->
+<!DOCTYPE html>
+<!--HTML5 / html:5 / ! / "!"-->
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <!--UTF-8 Exibi caracteres especiais, essa tag nao precisa de fechamento-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Deixa essa pagina compativel com outros navegadores /internet explorer-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--1. passo pra tornar responsivo/ adapta pra tela celular/pc/da zoom etc-->
+
+  <!--texto da aba-->
+  <title>Lista de Jogos de Tabuleiro</title>
+  <link rel="favicon icon" href="https://cdn-icons-png.flaticon.com/512/1451/1451303.png" type="image/x-icon">
+
+  <!--Boas práticas: linkar o Css no head-->
+  <link rel="stylesheet" href="/css/estilo.css">
+  <!--Se for estilizar aqui, abra uma tag style no head.
+  <style> 
+    .elemento{color:red}
+  </style>-->
+</head>
+
+<body>
+
+  <main>
+    <!--Tag de cabeçalho h1 só pode ter apenas 1 por pág, h1-h6: não pode considerar o tamanho da letra, e, sim a hierarquia-->
+    <h1>Lista de Jogos de Tabuleiro</h1>
+
+    <!--em bloco exibe sempre um embaixo do outro
+    em linha exibem sempre um do lado do outro-->
+
+    <p>olá eu sou um... &lt; parágrafo &gt; &amp; &quot; &apos; </p>
+    <p>tag p é paragrafo, e é em bloco</p>
+
+    <p>
+      <q> tag q é citação: <em> eu nao sei de nada cara </em> by Socrates</q>
+    </p>
+
+    <!--atributo cite vincula as citações com outro link <q cite = "www.siteDaCitacao.com"> saiba mais </q> OU <blockquote cite  = "www"> citacao </blockquote>-->
+
+    <blockquote>
+      <p>
+        <strong> blockquote </strong> é para uma citação de parágrafo
+      </p>
+      <blockquote>
+
+        <blockquote cite="https://google.com">
+          <p>
+            O <strong> Elemento HTML <code> &lt;Blockquote&gt;</code> </strong> (ou <em> HTML Block Quotation Element</em>) indica que um texto externo foi citado.
+          </p>
+          <blockquote>
+
+    <p>De acordo com a <a href="https://google.com">
+      <cite>pagina google</cite>
+    </a> teste teste
+  </p>
+
+  <p>O elemento quote - <code>&lt;q&gt;</code> - e usado para <q cite="https://google.com">citacoes curtas que nao precisam de paragrafos ou quebras de linha.</q> -- <a href="https://google.com"><cite>Google page</cite></a>.</p>
+
+  <p>Usamos <abbr title="Hypertext Markup Language">HTML</abbr>para estruturar nossos documentos da web.</p>
+</main>
+<div>
+
+  <a href="https://google.com" target="_blank" title="legenda quando passa o mouse">Website</a>
+  <a href="mailto:yurie_hikari@hotmail.com">Email</a>
+  <a href="tel:+5511934500108">Telefone</a>
+  <br>
+  <a href="#Jogo1">#Fragmento 1</a>
+  <br>
+  <a href="#Jogo2">#Fragmento 2</a>
+  <br>
+  <a href="#Jogo3">#Fragmento 3</a>
+  <br>
+  <a href="mensagem.html" target="_blank">Abrir mensagem</a>
+  <a href="./git-aulas/git.html">Aulas Git</a>
+  
+  <!--URL absoluto e relativo
+    absoluto tem http
+    relativo procura o arquivo na pasta-->
+    
+    <!--ao acessar uma página vc pode inspecionar com F12-->
+    
+    <!--é legal separar em section me diz que estou falando de um assunto, a div não tem semantica, nao me diz que é texto-->
+    <!-- Elemento Generico
+      <div> ideia de bloco, usado para agrupar conteudos
+        <span> ideia de linha, usado para agrupar texto   -->
+          
+          <ol type="1">
+            <!--listas ordenadas=ol, atributo type="a" muda para letra a,b,c "A": A,B,C, "i": i, ii, iii, "I": I,II,III-->
+            <li>
+              <h2 id="Jogo1">Monopoly</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore?</p>
+              <img 
+              width="150px" 
+              src="https://m.media-amazon.com/images/I/81Nh5q-5XAL._AC_SX425_.jpg
+              " 
+              alt="imagem do jogo de tabuleiro Monopoly"
+              title="Monopoly">
+              <ol type="a">
+                <li>Disney</li>
+                <li>Nintendo</li>
+                <li>The Beatles</li>
+              </ol>
+            </li>
+            
+            <li>
+              <h2 id="Jogo2">Uno</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ad!</p>
+              <img 
+              width="150px" 
+              src="https://a-static.mlcdn.com.br/618x463/jogo-uno-cartas-modelo-novo-personalizavel-original-copag/aesshop/7616489215/d7368465b26ad4ac79ca75d8e78dcdff.jpg
+              " 
+              alt="Jogo de Uno" 
+              title="Jogo de Uno">
+              <ol type="A"> 
+                <li>spin</li>
+                <li>minecraft</li>
+              </ol>
+            </li>
+            
+          </ol>
+          <!--Lista Desordenada=ul aparece bolinha, quadrado-->
+          <ul>
+            <h2 id="Jogo3">War</h2>
+            <!--src é o endereço onde vai puxar a imagem/ href="../imagensfolder/imagemNoMeuPc.jpeg">-->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quidem?</p>
+            <img 
+            width="150px" 
+            src="https://http2.mlstatic.com/D_NQ_NP_736982-MLB44974183309_022021-O.jpg
+            " 
+            alt="Jogo de Tabuleiro do jogo War"
+            title="jogo War">
+            <li>warcraft</li>
+            <li>warrior</li>
+            <li>waze</li>
+          </ul>
+          
+          <ol>
+            <li>
+              <a href="mensagem.html" target="_blank">
+                <p>outra pagina</p>
+              </a>
+            </li>
+            
+            
+          </ol>
+          
+          <!--sessão / bloco / container use a tag <div>-->
+            <a href="https://www.w3schools.com" target="_blank"> 
+              <p>Clique aqui ou na imagem para saber mais</p>
+              <img src="https://source.unsplash.com/random" alt="imagem aleatoria" height="150" width="500">
+            </a>
+            
+          </div>
+
+          <div>
+            <h2>Sugestoes de restaurantes que oferecem jogos de tabuleiro</h2>
+            <h3>Restaurante e Cafe Bodogami, Liberdade - Sao Paulo</h3>
+            <iframe title="imagem de mapa do restaurante Bodogami" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d814.5738634457693!2d-46.63660966129212!3d-23.557214359020424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59fe36f0e129%3A0xd35993b0f6f16c96!2sBodogami%20Restaurante%20e%20Cafeteria!5e0!3m2!1sen!2sbr!4v1655754019765!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h3>Hamburgueria e Restaurante Fan Hour Games and Burgers, Pinheiros - Sao Paulo</h3>
+            <iframe title="imagem de mapa do restaurante e Fan Hour Games and Burgers" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4952.744422158199!2d-46.6807799889253!3d-23.562298447358657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x20541ec0defa41d1!2sFan%20Hour%20Games%20and%20Burgers!5e0!3m2!1sen!2sbr!4v1655754252913!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+            
+            
+            <footer>
+              <address>
+                <p>
+        Made by Marcia Yurie <br>
+      <strong>Sao Paulo, SP</strong></p>
+    </address>
+
+  </footer>
+
+</body>
+
+
+</html>
